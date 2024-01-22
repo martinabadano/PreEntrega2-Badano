@@ -1,0 +1,116 @@
+body {
+    background-color: #374045;
+}
+
+header nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: rgb(54, 54, 54);
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+#footer{
+    background-color: rgb(42, 42, 42);
+    color: whitesmoke
+}
+
+.tituloWallpapers{
+background-color: rgb(106, 3, 3);
+color: rgb(255, 255, 255);
+font-size: 1.5rem;
+}
+
+.textoNoticia{
+    background-color: black;
+    color: antiquewhite;
+    font-size: 0.8em;
+}
+
+.tituloAlbum{
+    background-color: brown;
+    color: antiquewhite;
+    font-size: 1.2em;
+}
+
+.portadaAlbum a{
+    background-color: rgb(18, 18, 130);
+    color: white;
+    border-radius: 10%;
+}
+
+.btn-primary {
+    background-color: #E1D89F;
+    color: #2C061F;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: black;
+    color: whitesmoke
+}
+
+.cards-albums {
+    display: flex;
+    justify-content: center;
+}
+
+.card-img-top {
+    padding: 10px 5px;
+}
+
+.card {
+    margin: 10px;
+    display: flex;
+}
+
+
+.container-albums {
+    margin-bottom: 20px;
+}
+
+.navbar {
+    background-color: #2C061F;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-link {
+    color: #E1D89F
+}
+
+.nav-link:hover{
+    font-weight: bold;
+    color: #E1D89F;
+}
+
+.img-logo {
+    max-width: 70px;
+}
+
+.carousel-desktop{
+    display: flex;
+    margin: 10px;
+    max-width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    align-items: center;
+}
+
+.seccionWallpapers {
+    display: inline-block;
+    color: whitesmoke;
+    text-align: center;
+    margin: 10px;
+    font-style: italic;
+}
+
+.bodyGaleria{
+    background-color: ;
+}
+
