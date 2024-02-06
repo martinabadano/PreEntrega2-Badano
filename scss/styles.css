@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #374045;
+}
+
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 30px;
+  background-color: rgb(54, 54, 54);
+}
+
+/* Estilos del footer */
+#footer {
+  display: flex;
+  height: 5vh;
+  background-color: rgb(42, 42, 42);
+  color: whitesmoke;
+  align-items: flex-end;
+}
+
+.tituloWallpapers {
+  background-color: rgb(106, 3, 3);
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+}
+
+.textoNoticia {
+  background-color: black;
+  color: antiquewhite;
+  font-size: 0.8em;
+}
+
+.tituloAlbum {
+  background-color: brown;
+  color: antiquewhite;
+  font-size: 1.2em;
+}
+
+.portadaAlbum a {
+  background-color: rgb(18, 18, 130);
+  color: white;
+  border-radius: 10%;
+}
+
+.btn-primary {
+  background-color: #E1D89F;
+  color: #2C061F;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: black;
+  color: whitesmoke;
+  transform: scale(1.1, 1.1);
+}
+
+.cards-albums {
+  display: flex;
+  justify-content: center;
+}
+
+.card-img-top {
+  padding: 10px 5px;
+}
+
+.card {
+  margin: 10px;
+  display: flex;
+}
+
+.container-albums {
+  margin-bottom: 20px;
+}
+
+.navbar {
+  background-color: #2C061F;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-link {
+  color: #E1D89F;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+  color: #E1D89F;
+}
+
+.img-logo {
+  max-width: 70px;
+}
+
+.img-logo:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.carousel-desktop {
+  display: flex;
+  margin: 10px;
+  max-width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  align-items: center;
+}
+
+.seccionWallpapers {
+  display: inline-block;
+  color: whitesmoke;
+  text-align: center;
+  margin: 10px;
+  font-style: italic;
+}
+
+/* Estilos del formulario */
+.formularioSuscripcion {
+  display: flex;
+  height: 60vh;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(42, 42, 42);
+  margin: 1rem;
+  border-radius: 5%;
+  margin-bottom: 120px;
+}
+
+.formElement {
+  margin-bottom: 2rem;
+}
+
+.inputForm {
+  display: inline;
+  border: 1px solid #858585;
+  border-radius: 0.25rem;
+  margin-left: 0.75rem;
+  gap: 20px;
+  padding: 0.1rem;
+}
+
+.checkNovedades, .checkbox {
+  display: inline;
+  padding-right: 10px;
+  font-style: italic;
+  color: #858585;
+}
+
+.btn-botonSuscripcion {
+  display: inline-block;
+  border-radius: 0.77rem;
+  padding: 4px;
+  color: #a16a0b;
+  background-color: #E1D89F;
+  border-color: #D89216;
+  font-weight: bold;
+}
+
+.btn-botonSuscripcion:hover {
+  transform: scale(1.1, 1.1);
+}
+
+label {
+  color: whitesmoke;
+}
+
+/* Estilos de noticias */
+.linkNotaCompleta {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.linkNotaCompleta:hover {
+  font-weight: 600;
+}
+
+.cardNoticia {
+  display: inline;
+}
+
+/* Estilos del Home */
+#tituloHome {
+  color: whitesmoke;
+  text-align: center;
+  font-weight: bolder;
+}
+
+#subtituloHome {
+  color: #E1D89F;
+  text-align: center;
+}
+
+#imgHome {
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+  align-items: center;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*# sourceMappingURL=styles.css.map */

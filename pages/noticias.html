@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Noticias</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../scss/styles.css">
 </head>
 <body>
     <header>
-        <!-- Barra de navegación -->
+
+<!-- Barra de navegación -->
+
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-              <a class="navbar-brand nav-link" href="/EntregasProyecto/entregaDos/index.html"><img class="img-logo" src="../img/AC-DC-Logo.png" alt="Logo"></a>
+              <a class="navbar-brand nav-link" href="/index.html"><img class="img-logo" src="../img/AC-DC-Logo.png" alt="Logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -37,26 +39,69 @@
           </nav>
     </header>
 
-    <main>
-        <div class="PrimeraNoticia">
-        <img src="../img/noticiaUno.avif" alt="La banda ACDC tocando en vivo">
-        <h2>
-            AC/DC anuncia cómo se conformará la banda en su vuelta a las presentaciones en vivo.
-        </h2>
-        <p class="textoNoticia">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, corrupti molestiae omnis ullam, suscipit, quo cum sint hic iure eum obcaecati! Perferendis veritatis cupiditate soluta voluptatem laboriosam dolorum ut beatae?</p>
-        </div>
-        <div class="SegundaNoticia">
-        <img src="../img/noticiaDos.jpg" alt="Angus Young con su guitarra">
-        <h2>
-            Rumores de tour: cuál sería el recorrido por Europa.
-        </h2>
-        <p class="textoNoticia">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident possimus ut nihil debitis. Eaque, porro quos non a laborum fugiat quasi harum deserunt libero rerum ab id, consequatur nihil mollitia!</p>
-        </div>
-    </main>
+<!-- Lista de noticias-->
 
-    <footer id="footer">
-        Página sin fines de lucro ni comerciales. 
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<main>
+  <section class="container containerNoticias">
+  <div class="cardNoticia col-lg-4 col-md-6 col-sm-12" id="flexContainer">
+  <div class="card mb-3 cardNoticias noticiaUno row" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4 col-sm-12">
+        <img src="../img/noticiaUno.avif" class="img-fluid rounded-start imagenNoticia" alt="La banda ACDC tocando en vivo">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">AC/DC podría llegar a Brasil en este 2024: ¿Hay chances de que pisen Argentina?</h5>
+          <p class="card-text">La banda australiana desembarcaría en el país carioca para llevar a cabo cuatro shows. Todo lo que se sabe en esta nota.</p>
+          <a class="linkNotaCompleta" href="https://indiehoy.com/noticias/ac-dc-shows-brasil-2024-argentina/" target="_blank"><p class="card-text"><small class="text-body-secondary">Ver nota completa</a>
+          
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cardNoticia">
+  <div class="card mb-3 cardNoticias noticiaDos row" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="../img/noticiaDos.jpg" class="img-fluid rounded-start imagenNoticia" alt="Angus Young con su guitarra">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">AC/DC marcó récord histórico de reproducciones en YouTube</h5>
+          <p class="card-text ">Es la segunda canción de la banda que consigue este logro y se suma al “Club del Billón”. </p>
+          <a class="linkNotaCompleta" href="https://urgente24.com/ocio/acdc-marco-record-historico-reproducciones-youtube-n570696" target="_blank"><p class="card-text"><small class="text-body-secondary">Ver nota completa</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cardNoticia">
+  <div class="card mb-3 cardNoticias noticiaTres row" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="../img/noticiaTres.jpg" class="img-fluid rounded-start imagenNoticia" alt="Angus y Brian en concierto">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">AC/DC volvió a los escenarios después de 7 años</h5>
+          <p class="card-text ">El espectáculo marcó la primera vez que el vocalista Johnson actuó con el grupo desde septiembre de 2016 en Filadelfia.</p>
+          <a class="linkNotaCompleta" href="https://www.ambito.com/espectaculos/acdc-volvio-los-escenarios-despues-7-anos-n5841293" target="_blank"><p class="card-text"><small class="text-body-secondary">Ver nota completa</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+</main>
+
+<footer id="footer">
+  Página sin fines de lucro ni comerciales. 
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </body>
 </html>

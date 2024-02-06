@@ -1,3 +1,6 @@
+@import "utilidades/variables";
+@import "utilidades/animacion";
+
 *{
     margin: 0;
     padding: 0;
@@ -5,29 +8,33 @@
 }
 
 body {
-    background-color: #374045;
+    background-color: nth($colores,2);
 }
 
-header nav ul li a{
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 30px;
-    background-color: rgb(54, 54, 54);
+header{
+    nav{
+        ul{
+            li{
+                list-style: none;
+                a{
+                    color: whitesmoke;
+                    text-decoration: none;
+                    font-size: 30px;
+                    background-color: rgb(54, 54, 54);
+                }
+            }
+        }
+    }
 }
 
-header nav ul li{
-    list-style: none;
-}
-
-/* Footer */
-
+/* Estilos del footer */
 #footer{
     display: flex;
     height: 5vh;
     background-color: rgb(42, 42, 42);
     color: whitesmoke;
     align-items: flex-end;
-    
+   
 }
 
 .tituloWallpapers{
@@ -55,15 +62,15 @@ font-size: 1.5rem;
 }
 
 .btn-primary {
-    background-color: #E1D89F;
-    color: #2C061F;
+    background-color: nth($colores,4);
+    color: nth($colores,1);
     border: none;
 }
 
 .btn-primary:hover {
     background-color: black;
     color: whitesmoke;
-    transform: scale(1.1,1.1)
+    transform: $movimiento;
 }
 
 .cards-albums {
@@ -85,25 +92,26 @@ font-size: 1.5rem;
 }
 
 .navbar {
-    background-color: #2C061F;
+    background-color: nth($colores,1);
     display: flex;
     justify-content: space-evenly;
 }
 
 .nav-link {
-    color: #E1D89F
+    color: nth($colores,4);
 }
 
 .nav-link:hover{
     font-weight: bold;
-    color: #E1D89F;
+    color: nth($colores,4);
 }
 
 .img-logo {
     max-width: 70px;
 }
+
 .img-logo:hover{
-    transform: scale(1.1,1.1)
+    transform: $movimiento;
 }
 
 .carousel-desktop{
@@ -125,7 +133,7 @@ font-size: 1.5rem;
     font-style: italic;
 }
 
-/* formulario */
+/* Estilos del formulario */
 
 .formularioSuscripcion{
     display: flex;
@@ -164,24 +172,26 @@ font-size: 1.5rem;
     border-radius: 0.77rem;
     padding: 4px;
     color: #a16a0b;
-    background-color: #E1D89F;
-    border-color: #D89216;
+    background-color: nth($colores,4);;
+    border-color: nth($colores,3);
     font-weight: bold;
 }
+
 .btn-botonSuscripcion:hover{
-    transform: scale(1.1,1.1);
+    transform: $movimiento;
 }
 
 label{
     color: whitesmoke;
 }
 
-/* Noticias */
+/* Estilos de noticias */
 
 .linkNotaCompleta{
     text-decoration: none;
     font-size: 15px;
 }
+
 .linkNotaCompleta:hover{
     font-weight: 600;
 }
@@ -190,7 +200,7 @@ label{
     display: inline;
 }
 
-/* Home */
+/* Estilos del Home */
 
 #tituloHome{
     color: whitesmoke;
@@ -198,16 +208,56 @@ label{
     font-weight: bolder
 }
 
+
 #subtituloHome{
-    color: #E1D89F;
+    color: nth($colores,4);
     text-align: center;
 }
 
+#flexContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 #imgHome{
+    display: flex;
     max-width: 100%;
     height: auto;
-    padding: 20px;
     align-items: center;
     border-radius: 50px;
-    object-fit: cover
+    object-fit: cover;
+}
+
+#imgHome{
+    animation-name: zoom;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+    }
+
+@keyframes zoom {
+    0%{
+        transform: scale(1);
+    }
+    15%{
+        transform: scale(1.2);
+    }
+    30%{
+        transform: scale(1.3);
+    }
+    45%{
+        transform: scale(1.5);
+    }
+    60%{
+        transform: scale(1.3);
+    }
+    75%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
